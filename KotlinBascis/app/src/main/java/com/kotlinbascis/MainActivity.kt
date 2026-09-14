@@ -1,5 +1,6 @@
 package com.kotlinbascis
 
+import android.icu.text.UnicodeSetSpanner
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -27,7 +28,20 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        week03Variables()
     }
+}
+
+private fun week03Variables() {
+    println("Week 02: Variables")
+
+    val courseName = "Mobile Programing" // Java final keyword = val
+    // courseName = "DataStructure" // error
+
+    var week = 2
+    week = 3
+    println("Course : $courseName")
+    println("Week : $week")
 }
 
 @Composable
